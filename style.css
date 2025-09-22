@@ -56,6 +56,7 @@ body {
   display: inline-block;
   /* background-image: url(./src/img/iphone16-1.png); */
   position: relative;
+  color: #f5f5f7;
 }
 .heroimg:nth-child(1) img {
   display: block;
