@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 1920px;
+  width: 100vw;
   height: auto;
   font-family: "Inter";
   margin: 0;
@@ -52,24 +52,13 @@ body {
   row-gap: 12px;
 }
 
-.heroimg:nth-child(1) {
-  display: inline-block;
-  position: relative;
-  color: #f5f5f7;
-}
-.heroimg:nth-child(1) img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .imgtext {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 55px;
-  left: 757px;
+
+  text-align: center;
+  padding-top: 55px;
   gap: 16px;
 }
 .imgtextheader {
@@ -122,34 +111,34 @@ body {
   text-align: center;
 }
 
-.heroimg:nth-child(2) {
-  display: inline-block;
+.heroimg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 692px;
   position: relative;
-  color: #f5f5f7;
-}
-.heroimg:nth-child(2) img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
+.heroimg:nth-child(1) {
+  color: #f5f5f7;
+  background-image: url(./src/img/iphone16-1.png);
+}
+
+.heroimg:nth-child(2) {
+  color: #f5f5f7;
+  background-image: url(./src/img/iphone16-2.png);
+}
 .heroimg:nth-child(3) {
-  display: inline-block;
-  position: relative;
   color: #000000;
+  background-image: url(./src/img/giftmagic.png);
 }
-.heroimg:nth-child(3) img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 .imgtextfooter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 446px;
-  left: 757px;
+  padding-top: 446px;
   gap: 16px;
 }
 .imgtextfooterfoot h1 {
@@ -167,4 +156,162 @@ body {
   line-height: 32px;
   text-align: center;
   margin: 0;
+}
+
+.imgtextfootersub {
+  display: flex;
+  gap: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.productbox {
+  position: relative;
+  width: 50vw;
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.productheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 58px;
+  gap: 16px;
+}
+.producttextheader h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 16px 0;
+}
+.producttextheader h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin: 0;
+}
+.producttext-sub {
+  display: flex;
+  gap: 10px;
+}
+
+#gradient1 {
+  position: absolute;
+  top: 0px;
+  padding-top: 509px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  background: #0090f7;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 144, 247, 1) 0%,
+    rgba(186, 98, 252, 1) 33%,
+    rgba(242, 65, 107, 1) 66%,
+    rgba(245, 86, 0, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.productfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 401px;
+  gap: 16px;
+}
+.productfooterfoot h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 16px 0;
+}
+.productfooterfoot h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+}
+.watch-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.watch-header h2 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 4px 0;
+  color: #000000;
+  letter-spacing: 2px;
+}
+.watch-header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: #1d1d1f;
+}
+.watch-name {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.watch-name h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 8px 0;
+  color: #000000;
+}
+.watch-name img {
+  width: 26.35px;
+  height: 32px;
+}
+.productbox:nth-child(1) {
+  background-image: url(./src/img/ipadair.png);
+  background-color: #f5f5f7;
+  display: flex;
+  justify-content: center;
+}
+
+.productbox:nth-child(2) {
+  background-image: url(./src/img/airpodspro2.png);
+  background-color: #f5f5f7;
+  color: white;
+}
+.productbox:nth-child(3) {
+  grid-row-start: 2;
+  background-image: url(./src/img/watch.png);
+  background-color: #f5f5f7;
+  color: white;
 }
