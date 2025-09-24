@@ -8,7 +8,20 @@ body {
   font-family: "Inter";
   margin: 0;
   border: 0;
+  font-optical-sizing: auto;
+  /* font-weight: 400;
+  font-style: normal; */
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+} */
 
 .header {
   width: 100%;
@@ -19,7 +32,7 @@ body {
   align-items: center;
   gap: 24px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 60px;
   letter-spacing: -0.28px;
   background-color: hsla(240, 11%, 96%, 0.8);
@@ -75,7 +88,7 @@ body {
 }
 .imgtextheader h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   text-align: center;
   margin: 0;
@@ -91,7 +104,7 @@ body {
   padding: 12px 20px;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   line-height: 20px;
   letter-spacing: -0.37px;
@@ -104,7 +117,7 @@ body {
   padding: 12px 20px;
   color: #2997ff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   line-height: 20px;
   letter-spacing: -0.37px;
@@ -152,7 +165,7 @@ body {
 }
 .imgtextfooterfoot h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 32px;
   text-align: center;
   margin: 0;
@@ -168,6 +181,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 12px;
+  margin-bottom: 12px;
 }
 
 .productbox {
@@ -193,11 +207,11 @@ body {
   line-height: 44px;
   text-align: center;
   margin: 0;
-  padding: 0 0 16px 0;
+  /* padding: 0 0 16px 0; */
 }
 .producttextheader h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 25px;
   text-align: center;
   margin: 0;
@@ -240,14 +254,40 @@ body {
   line-height: 44px;
   text-align: center;
   margin: 0;
-  padding: 0 0 16px 0;
+  /* padding: 0 0 16px 0; */
 }
 .productfooterfoot h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 25px;
   text-align: center;
   margin: 0;
+}
+.prodbutton1 {
+  background-color: #0071e3;
+  border-radius: 9999px;
+  border: transparent;
+  padding: 10px 16px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  text-align: center;
+}
+.prodbutton2 {
+  border: 1px solid #2997ff;
+  background-color: transparent;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  color: #2997ff;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.37px;
+  text-align: center;
 }
 
 .watch {
@@ -262,6 +302,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 16px;
+  width: 322px;
 }
 .watch-header h2 {
   font-size: 15px;
@@ -274,7 +315,7 @@ body {
 }
 .watch-header h3 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   margin: 0;
   color: #1d1d1f;
@@ -297,13 +338,20 @@ body {
   width: 26.35px;
   height: 32px;
 }
+
+#macbookheader {
+  padding-top: 48px;
+  gap: 10px;
+}
+#macbookheadertext h1 {
+  padding-bottom: 0;
+}
 .productbox:nth-child(1) {
   background-image: url(./src/img/ipadair.png);
   background-color: #f5f5f7;
   display: flex;
   justify-content: center;
 }
-
 .productbox:nth-child(2) {
   background-image: url(./src/img/airpodspro2.png);
   background-color: #f5f5f7;
@@ -314,4 +362,89 @@ body {
   background-image: url(./src/img/watch.png);
   background-color: #f5f5f7;
   color: white;
+}
+.productbox:nth-child(4) {
+  grid-row-start: 2;
+  background-image: url(./src/img/macbookair.png);
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+.productbox:nth-child(5) {
+  grid-row-start: 3;
+  background-image: url(./src/img/tradein.png);
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+.productbox:nth-child(6) {
+  grid-row-start: 3;
+  background-image: url(./src/img/applecard.png);
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.scrollbar {
+  width: 100vw;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  gap: 16px;
+}
+.mov {
+  width: 1250px;
+  height: 668px;
+  color: white;
+  flex-shrink: 0;
+  font-size: 20px;
+  position: relative;
+  scroll-snap-align: center;
+  background: var(--background-image) center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.stream {
+  position: absolute;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: -0.37;
+  border-radius: 9999px;
+  padding: 12px 20px;
+  background-color: #f5f5f7;
+}
+.desc {
+  font-size: 17px;
+  font-weight: 300;
+}
+.mov:nth-child(1) {
+  background-image: url(./src/img/movies/1.png);
+}
+.mov:nth-child(2) {
+  background-image: url(./src/img/movies/2.jpg);
+}
+.mov:nth-child(3) {
+  background-image: url(./src/img/movies/3.jpg);
+}
+.mov:nth-child(4) {
+  background-image: url(./src/img/movies/4.jpg);
+}
+.mov:nth-child(5) {
+  background-image: url(./src/img/movies/5.jpg);
+}
+.mov:nth-child(6) {
+  background-image: url(./src/img/movies/6.jpg);
+}
+.mov:nth-child(7) {
+  background-image: url(./src/img/movies/7.jpg);
+}
+.mov:nth-child(8) {
+  background-image: url(./src/img/movies/8.jpg);
+}
+.mov:nth-child(9) {
+  background-image: url(./src/img/movies/9.jpg);
+}
+.mov:nth-child(10) {
+  background-image: url(./src/img/movies/10.jpg);
 }
