@@ -400,8 +400,7 @@ h6 {
   scroll-snap-align: center;
   background: var(--background-image) center / cover no-repeat;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  /* flex-direction: column; */
 }
 
 .stream {
@@ -411,12 +410,23 @@ h6 {
   line-height: 17px;
   letter-spacing: -0.37;
   border-radius: 9999px;
+  border: 0px transparent;
   padding: 12px 20px;
   background-color: #f5f5f7;
+  top: 566px;
+  left: 70px;
 }
 .desc {
   font-size: 17px;
   font-weight: 300;
+  line-height: 20px;
+  position: absolute;
+  text-shadow: 0px 0px 5px #00000099;
+  background-clip: text;
+  top: 575px;
+  left: 223px;
+  margin: 0;
+  text-align: center;
 }
 .mov:nth-child(1) {
   background-image: url(./src/img/movies/1.png);
@@ -447,4 +457,81 @@ h6 {
 }
 .mov:nth-child(10) {
   background-image: url(./src/img/movies/10.jpg);
+}
+
+img[alt="tablist"] {
+  width: 220px;
+  height: 8px;
+  margin-top: 14px;
+  display: flex;
+  justify-self: center;
+}
+
+.services {
+  width: 100vw;
+  margin-top: 14px;
+  height: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.servicesbox {
+  position: relative;
+  background: var(--background-image) center / cover no-repeat;
+  width: 417px;
+  height: 236px;
+}
+
+.servdesc {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 177px;
+  width: 100%; /* make it span the whole parent/container */
+  left: 0; /* anchor it if needed */
+}
+
+.servdesc h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.22px;
+}
+
+.servicesbox:nth-child(1) {
+  color: #ffffff;
+  background-image: url(./src/img/services/pilates.png),
+    linear-gradient(0deg, rgba(0, 0, 0, 1) 66%, rgba(245, 86, 0, 0) 100%);
+}
+.servicesbox:nth-child(2) {
+  /* color: #ffffff; */
+  background-color: #1b2632;
+  color: white;
+}
+.servicesbox:nth-child(3) {
+  color: #ffffff;
+  background-image: url(./src/img/services/nba.jpg);
+}
+
+img[alt="rnb"] {
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  border-radius: 8px;
+}
+#rnbnow {
+  position: absolute;
+  top: 109px;
+  left: 226px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.22px;
+}
+img[alt="applemusic"] {
+  position: absolute;
+  top: 199px;
+  left: 324px;
 }
