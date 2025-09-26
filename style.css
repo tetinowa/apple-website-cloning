@@ -471,24 +471,50 @@ img[alt="tablist"] {
   width: 100vw;
   margin-top: 14px;
   height: auto;
-  display: flex;
   gap: 16px;
+  display: flex;
+  overflow: auto;
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+  transition: filter 0.3s ease;
 }
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
 
 .servicesbox {
   position: relative;
   background: var(--background-image) center / cover no-repeat;
   width: 417px;
   height: 236px;
+  display: flex;
+  flex-shrink: 0;
+  transition: filter 0.3s ease;
+}
+
+.services:hover {
+  animation-play-state: paused;
+}
+
+.services:hover .servicesbox {
+  filter: grayscale(100%);
+}
+.services .servicesbox:hover {
+  filter: grayscale(0%);
 }
 
 .servdesc {
-  display: flex;
-  justify-content: space-around;
   position: absolute;
-  top: 177px;
-  width: 100%; /* make it span the whole parent/container */
-  left: 0; /* anchor it if needed */
+  /* top: 177px; */
+  width: 100%;
+  left: 0;
 }
 
 .servdesc h2 {
@@ -496,12 +522,24 @@ img[alt="tablist"] {
   font-weight: 600;
   line-height: 18px;
   letter-spacing: -0.22px;
+  position: absolute;
+  top: 177px;
+  left: 15px;
+}
+.servdesc img {
+  position: absolute;
+  top: 198px;
+  left: 324px;
+}
+.servicebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .servicesbox:nth-child(1) {
   color: #ffffff;
-  background-image: url(./src/img/services/pilates.png),
-    linear-gradient(0deg, rgba(0, 0, 0, 1) 66%, rgba(245, 86, 0, 0) 100%);
+  background-image: url(./src/img/services/pilates.png);
 }
 .servicesbox:nth-child(2) {
   /* color: #ffffff; */
@@ -512,6 +550,35 @@ img[alt="tablist"] {
   color: #ffffff;
   background-image: url(./src/img/services/nba.jpg);
 }
+.servicesbox:nth-child(4) {
+  color: #ffffff;
+  background-image: url(./src/img/services/strengthkim.jpg);
+}
+.servicesbox:nth-child(5) {
+  background-color: #ebb799;
+  color: white;
+}
+.servicesbox:nth-child(6) {
+  color: #ffffff;
+  background-image: url(./src/img/services/pilates.png);
+}
+.servicesbox:nth-child(7) {
+  /* color: #ffffff; */
+  background-color: #1b2632;
+  color: white;
+}
+.servicesbox:nth-child(8) {
+  color: #ffffff;
+  background-image: url(./src/img/services/nba.jpg);
+}
+.servicesbox:nth-child(9) {
+  color: #ffffff;
+  background-image: url(./src/img/services/strengthkim.jpg);
+}
+.servicesbox:nth-child(10) {
+  background-color: #ebb799;
+  color: white;
+}
 
 img[alt="rnb"] {
   width: 196px;
@@ -521,6 +588,16 @@ img[alt="rnb"] {
   left: 15px;
   border-radius: 8px;
 }
+
+img[alt="notrnb"] {
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  border-radius: 8px;
+}
+
 #rnbnow {
   position: absolute;
   top: 109px;
@@ -529,9 +606,4 @@ img[alt="rnb"] {
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.22px;
-}
-img[alt="applemusic"] {
-  position: absolute;
-  top: 199px;
-  left: 324px;
 }
