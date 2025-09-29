@@ -467,27 +467,31 @@ img[alt="tablist"] {
   justify-self: center;
 }
 
+.services-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .services {
-  width: 100vw;
   margin-top: 14px;
+  width: max-content;
   height: auto;
   gap: 16px;
   display: flex;
-  overflow: auto;
   animation: scroll 15s linear infinite;
   white-space: nowrap;
   will-change: transform;
   transition: filter 0.3s ease;
 }
 
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
   }
-} */
+}
 
 .servicesbox {
   position: relative;
@@ -497,6 +501,7 @@ img[alt="tablist"] {
   display: flex;
   flex-shrink: 0;
   transition: filter 0.3s ease;
+  filter: none;
 }
 
 .services:hover {
@@ -508,6 +513,35 @@ img[alt="tablist"] {
 }
 .services .servicesbox:hover {
   filter: grayscale(0%);
+  filter: brightness(50%);
+}
+.servicebutton:hover {
+  filter: none;
+  opacity: 1;
+}
+.servicebutton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+
+.sliderbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  opacity: 1;
+  margin-top: 20px;
+  padding: 7px 15px;
+  border: transparent;
+  border-radius: 999px;
+  background-color: white;
+  opacity: 1;
 }
 
 .servdesc {
