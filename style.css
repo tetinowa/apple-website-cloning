@@ -378,6 +378,24 @@ body {
   background-color: #f5f5f7;
   color: #1d1d1f;
 }
+.productbox:nth-child(7) {
+  grid-row-start: 3;
+  background-image: url(./src/icons/responsive/pods4.jpg);
+  background-color: #f5f5f7;
+  color: #f5f5f7;
+  display: none;
+}
+.productbox:nth-child(8) {
+  display: none;
+  grid-area: e;
+  background-image: url(./src/icons/responsive/smallb.png);
+}
+
+.productbox:nth-child(9) {
+  display: none;
+  grid-area: f;
+  background-image: url(./src/icons/responsive/carrier.jpg);
+}
 
 .scrollbar {
   width: 100vw;
@@ -662,19 +680,95 @@ img[alt="notrnb"] {
     display: none;
   }
 
+  .donation p {
+    padding: 16px 10px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 12px;
     margin-bottom: 12px;
-  }
 
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e"
+      "f g";
+  }
+  .products {
+    gap: 12px;
+    grid-auto-rows: 490px;
+  }
+  .productbox {
+    display: flex;
+    justify-content: center;
+  }
+  .productheader {
+    width: 257px;
+  }
+  #airpodsdaa {
+    width: 241px;
+    padding-top: 287px;
+  }
+  #carriersda {
+    width: 314px;
+    padding-top: 296px;
+  }
+  .productfooterfoot h1 {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0 0 16px 0;
+  }
   .productbox:nth-child(1) {
-    grid-column: span -2 / span 2;
+    grid-area: a;
+    width: 100vw;
+  }
+  .productbox:nth-child(2) {
+    display: none;
+    grid-area: b;
+  }
+  .productbox:nth-child(3) {
+    grid-area: c;
+    background-image: url(./src/icons/responsive/watch.jpg);
+  }
+  .productbox:nth-child(4) {
+    grid-area: d;
+  }
+  .productbox:nth-child(5) {
+    background-image: url(./src/icons/responsive/trade.jpg);
+    grid-area: g;
+  }
+  .productbox:nth-child(6) {
+    display: none;
+  }
+  .productbox:nth-child(7) {
+    display: flex;
+    grid-area: b;
+    text-align: center;
+  }
+  .productbox:nth-child(8) {
+    display: flex;
+    grid-area: e;
+  }
+  .productbox:nth-child(9) {
+    display: flex;
+    grid-area: f;
   }
 
-  .productbox:nth-child(2) {
-    grid-row-start: 2;
+  .mov {
+    width: 689px;
+    height: 368px;
+    background: center / cover no-repeat;
   }
+}
+
+@media (max-width: 390px) {
 }
