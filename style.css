@@ -811,7 +811,7 @@ img[alt="notrnb"] {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 12px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     grid-template-areas:
       "a"
       "b"
@@ -838,6 +838,7 @@ img[alt="notrnb"] {
     width: 100vw;
     display: flex;
     margin-bottom: 12px;
+    margin-top: 12px;
   }
   .productbox:nth-child(2) {
     display: none;
@@ -901,10 +902,10 @@ img[alt="notrnb"] {
     background-image: url(./src/icons/responsive/mobile/mov8.jpg);
   }
   .mov:nth-child(9) {
-    background-image: url(./src/icons/responsive/mobile/mov9.jpg);
+    background-image: url(./src/icons/responsive/mobile/mov8.jpg);
   }
   .mov:nth-child(10) {
-    background-image: url(./src/icons/responsive/mobile/mov10.jpg);
+    background-image: url(./src/icons/responsive/mobile/mov8.jpg);
   }
 
   /* .servicesbox {
@@ -921,20 +922,40 @@ img[alt="notrnb"] {
     background-size: 238px 134px;
     background-repeat: no-repeat;
     background-position: top;
+    display: flex;
+    flex-direction: column;
   }
   .services {
     gap: 12px;
     margin-bottom: 14px;
   }
-  .servicebutton img {
+  .servdesc h2 {
+    top: 144px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .servicebutton {
+    justify-content: center;
+    align-items: center;
+    height: 134px;
+  }
+  /* .servicebutton img {
     width: 114px;
     height: 114px;
-  }
+  } */
   .servicebutton h2 {
     display: none;
   }
   #rnbnow {
-    display: none;
+    top: 144px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
   }
   img[alt="rnb"] {
     width: 114px;
@@ -949,5 +970,41 @@ img[alt="notrnb"] {
     top: 20px;
     left: 15px;
     border-radius: 8px;
+  }
+  .servicesbox:nth-child(2) {
+    background-color: transparent;
+  }
+  .servicesbox:nth-child(5) {
+    background-color: transparent;
+  }
+  .servicesbox:nth-child(7) {
+    background-color: transparent;
+  }
+  .servicesbox:nth-child(10) {
+    background-color: transparent;
+  }
+  .imgcont {
+    position: absolute;
+    width: 238px;
+    height: 134px;
+  }
+  .servicesbox:nth-child(2) .imgcont {
+    background-color: #1b2632;
+  }
+  .servicesbox:nth-child(5) .imgcont {
+    background-color: #ebb799;
+  }
+  .servicesbox:nth-child(7) .imgcont {
+    background-color: #1b2632;
+  }
+  .servicesbox:nth-child(10) .imgcont4 {
+    background-color: #ebb799;
+  }
+  .imgcont img {
+    width: 100px;
+    height: 100px;
+  }
+  .services-wrapper {
+    height: 200px;
   }
 }
