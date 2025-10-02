@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -171,13 +173,22 @@ body {
   text-align: center;
 }
 
-.latest {
-  width: 100%;
+.body-prod {
   display: flex;
   flex-direction: column;
   gap: 60px;
+}
+
+.latest {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
   padding-left: 140px;
   padding-right: 140px;
+  gap: 24px;
+  overflow: hidden;
 }
 
 .latest-header {
@@ -210,4 +221,241 @@ body {
   letter-spacing: 0;
   margin: 0;
   color: #6e6e73;
+}
+
+.scroll {
+  overflow-x: auto; /* horizontal scroll here */
+  width: 100%;
+}
+
+.prodcontainer {
+  width: max-content;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.prodbox {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background: center / cover no-repeat;
+  position: relative;
+}
+.prodbox:nth-child(1) {
+  background-image: url(./src/store/ip.jpg);
+}
+.prodbox:nth-child(2) {
+  background-image: url(./src/store/watchst.jpg);
+}
+.prodbox:nth-child(3) {
+  background-image: url(./src/store/ipadmini.jpg);
+}
+.prodbox:nth-child(4) {
+  background-image: url(./src/store/macpro.jpg);
+}
+
+.prodbox-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 322px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.prodbox-heading-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.prodbox-heading h1 {
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.prodbox-heading-inner h1 {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+.prodbox-heading-inner h2 {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#applewatchsc {
+  opacity: 0;
+}
+
+.personalisation {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 60px; */
+  padding-left: 140px;
+  padding-right: 140px;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.prodbox-pers {
+  width: 313px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background: center / cover no-repeat;
+  position: relative;
+  background-color: #ffffff;
+}
+.prodbox-pers:nth-child(1) {
+  background-image: url(./src/store/persona-intro.jpg);
+  width: 400px;
+  height: 500px;
+}
+.prodbox-pers:nth-child(1) h2 {
+  position: absolute;
+  top: 53px;
+  left: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.prodbox-pers-cont-img {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 71px;
+  left: 41.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prodbox-pers-cont-img img {
+  width: 230px;
+  height: 230px;
+}
+.coloroptions {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 25px;
+}
+.coloroptions img {
+  width: 12px;
+  height: 12px;
+}
+
+.prodbox-pers-cont-desc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 359px;
+  left: 28px;
+  gap: 32px;
+  width: 257px;
+}
+.prodbox-pers-cont-desc-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.prodbox-pers-cont-desc-heading h3 {
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.prodbox-pers-cont-desc-heading h4 {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.prodbox-pers-cont-desc h5 {
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#holidayintro {
+  background-image: url(./src/store/prod/holidayintro.jpg);
+  width: 400px;
+  height: 500px;
+}
+
+.scroll-apple {
+  overflow-x: auto; /* horizontal scroll here */
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.prodbox-apple {
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background: center / cover no-repeat;
+  position: relative;
+}
+.prodbox-apple:nth-child(1) {
+  background-image: url(./src/store/onlyatapple-intro);
+}
+.prodbox-apple h2 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+#prodapple2 {
+  background-image: url(./src/img/tradein.png);
+}
+.prodbox-apple:nth-child(3) {
+  background-image: url(./src/store/onlyatapple-intro);
+}
+.prodbox-apple-small-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prodbox-apple-small {
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background: center / cover no-repeat;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.prodbox-apple-small h1 {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
 }
