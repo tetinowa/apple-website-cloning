@@ -12,6 +12,7 @@ body {
   border: 0;
   font-optical-sizing: auto;
   background-color: hsla(240, 11%, 96%, 0.8);
+  padding-bottom: 100px;
 }
 
 .header {
@@ -425,8 +426,21 @@ body {
   line-height: 32px;
   letter-spacing: 0.2px;
 }
-#prodapple2 {
-  background-image: url(./src/img/tradein.png);
+.prodcontainer .prodbox-apple:nth-of-type(4) {
+  background-image: url(./src/store/tradein.jpg);
+  background-color: #ffffff;
+}
+.prodcontainer .prodbox-apple:nth-of-type(4) h1 {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-top: 31px;
+  padding-left: 30px;
+}
+.prodcontainer .prodbox-apple:nth-of-type(5) {
+  background-image: url(./src/store/specialist.jpg);
+  background-color: #ffffff;
 }
 .prodbox-apple:nth-child(3) {
   background-image: url(./src/store/onlyatapple-intro);
@@ -458,4 +472,97 @@ body {
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
+}
+
+.box {
+  width: 400px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px 0px #00000014;
+  background: center / cover no-repeat;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 31px 30px;
+}
+.box:nth-child(1) {
+  background-image: url(./src/store/exp-carreir.jpg);
+}
+.box:nth-child(2) {
+  background-image: url(./src/store/exp-educ.jpg);
+}
+.box:nth-child(3) {
+  background-image: url(./src/store/exp-refurb.jpg);
+}
+.box:nth-child(4) {
+  background-image: url(./src/store/exp-bus.jpg);
+}
+.box:nth-child(5) {
+  background-image: url(./src/store/exp-gov.jpg);
+}
+.box-content h3 {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.box-content h4 {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.box-content h5 {
+  color: #1d1d1f;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.box:nth-child(4) h4 {
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 60px; */
+  padding-left: 140px;
+  padding-right: 140px;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.footer-header {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.footer-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin: 0;
+  color: #1d1d1f;
+}
+
+.footer-foot {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-box {
+  padding: 10px 12px;
+  border-radius: 9999px;
+  border: 1px solid #1d1d1f;
+  display: flex;
+  gap: 8px;
 }
