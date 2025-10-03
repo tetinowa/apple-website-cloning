@@ -11,6 +11,14 @@ body {
   font-optical-sizing: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
 .header {
   width: 100%;
   height: 44px;
@@ -54,12 +62,14 @@ body {
 .donation p {
   text-align: center;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  padding-bottom: 12px;
 }
 
 .imgtext {
@@ -404,6 +414,7 @@ body {
   overflow-x: auto;
   display: flex;
   gap: 16px;
+  scroll-snap-type: x mandatory;
 }
 .mov {
   width: 1250px;
@@ -415,6 +426,7 @@ body {
   scroll-snap-align: center;
   background: var(--background-image) center / cover no-repeat;
   display: flex;
+
   /* flex-direction: column; */
 }
 
@@ -474,12 +486,26 @@ body {
   background-image: url(./src/img/movies/10.jpg);
 }
 
-img[alt="tablist"] {
-  width: 220px;
-  height: 8px;
-  margin-top: 14px;
+.scroll-indicators {
   display: flex;
-  justify-self: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.scroll-indicators .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bbb;
+  transition: background 0.3s ease;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
 }
 
 .services-wrapper {
